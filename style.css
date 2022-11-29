@@ -1,113 +1,110 @@
 * {
- margin: 0;
- padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
-  align-items: center;
-
+    align-items: center;
 }
 
 #picture-frame {
- width: 500px;
- height: 500px;
- background-color: aqua;
- position: absolute;
- top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 .arrow-btns {
- position: absolute;
-top: 40%;
-border: 1px solid  rgb(173, 203, 213); 
-font-size: 6rem;
-cursor: pointer;
-background-color: rgb(202, 225, 233);
-color: rgba(0, 0, 0, 0.5);
-
+    position: absolute;
+    top: 40%;
+    border: 1px solid rgb(173, 203, 213);
+    font-size: 6rem;
+    cursor: pointer;
+    background-color: rgb(202, 225, 233);
+    color: rgba(0, 0, 0, 0.5);
 }
 .arrow-btns:hover {
- background-color: lightblue;
+    background-color: lightblue;
 }
 .arrow-btns:active {
- background-color: rgb(131, 203, 227);
- /*👉opacity: 0.6;👈*/
- color: rgba(0, 0, 0, 1);
+    background-color: rgb(131, 203, 227);
+    color: rgba(0, 0, 0, 1);
 }
 #left-btn {
-left: -60px;
-border-radius: 50% 0% 0 50%;
+    left: -60px;
+    border-radius: 50% 0% 0 50%;
 }
 #right-btn {
-right: -60px;
-border-radius: 0% 50% 50% 0%;
+    right: -60px;
+    border-radius: 0% 50% 50% 0%;
 }
 #circle-container {
- width: 100%;
- height: 50px;
- 
- position:absolute;
- bottom: -50px;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 6px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 .index-circles {
- border-radius: 50%;
- width: 20px;
- height: 20px;
- border: 1px solid green
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    box-shadow: 2px 2px 5px 0px rgba(173, 216, 230, 0.88);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(173, 216, 230, 0.88);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(173, 216, 230, 0.88);
 }
 .index-circles:hover {
- background-color: lightblue;
+    border: lightblue 1px solid;
 }
 #photographer-name {
- position:absolute;
- top: 10px;
- left: 10px;
- opacity: 0.5;
-
-
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.5;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.27);
 }
 #pause-popup {
- position: absolute;
- width: 30%;
-  top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(-50%, -50%);
- visibility: hidden;
- opacity: 0.3;
- animation: 2s linear;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0.3;
+    animation: 2s linear;
 }
 #play-popup {
- position: absolute;
- width: 30%;
-  top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(-50%, -50%);
- visibility:hidden;
- opacity: 0.3;
- animation: 2s linear;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0.3;
+    animation: 2s linear;
 }
 
 @keyframes play-pause {
- 0% {
-visibility: visible;
- } 
- 25% {
-opacity: 1;
- }
- 50% {
-  opacity: 0.3;
- }
- 75% {
-  opacity: 1;
- }
- 100% {
-  visibility: hidden;
- }
+    0% {
+        visibility: visible;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+    }
 }
