@@ -15,7 +15,7 @@ const renderFrame = () => {
     const image = document.createElement("img");
     image.id = "current-image";
     image.src = `src/images/${images[imageIndex]}.jpg`;
-    image.style.width = "500px";
+    // image.style.width = "500px";
     image.alt = `Photograph by ${images[imageIndex].replace("-", " ")}`;
     const pausePopup = document.createElement("img");
     pausePopup.src = "src/icons/pause-icon.png";
