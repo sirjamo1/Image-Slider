@@ -14,7 +14,6 @@ Image Slider was built for The Odin Project.
 -   Click image to pause/resume 5 second changes.
 -   Click left/right/dot buttons to change image (also resumes 5 second changes).
 -   Animation pause/play pops up on click.
--
 
 Images from www.pexels.com
 
